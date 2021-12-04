@@ -1,7 +1,8 @@
 const navbarSection = document.querySelector('#navbar-section');
 const closeBtn = document.querySelector('#toggle-nav');
 let navState = 0;
-const toggleNav = () => {
+const toggleNav = (x) => {
+  x.classList.toggle('change');
   if (!navState) {
     navbarSection.className = 'navbar-section';
     navState = 1;
@@ -10,7 +11,3 @@ const toggleNav = () => {
     navState = 0;
   }
 };
-
-closeBtn.addEventListener('click', () => {
-  toggleNav();
-});
