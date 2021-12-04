@@ -36,8 +36,8 @@ button {
 }
 .display-pic {
   border-radius: 1000%;
-  width: 50vw;
-  height: 50vw;
+  width: 65vw;
+  height: 65vw;
   object-fit: cover;
 }
 .name {
