@@ -1,0 +1,12 @@
+#contact {
+  background-color: var(--dark);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact-heading {
+  font-size: 4rem;
+  font-weight: 700;
+}
