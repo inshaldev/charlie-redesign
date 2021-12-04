@@ -28,10 +28,12 @@ button {
 }
 
 /* HOME SECTION */
-#home {
+.home-container {
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem;
   align-items: center;
 }
 .display-pic {
