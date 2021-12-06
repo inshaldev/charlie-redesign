@@ -43,7 +43,7 @@ p {
   cursor: pointer;
 }
 .btn:active {
-  transform: translateY(0) scale(0.9);
+  transform: translateY(0);
 }
 a {
   color: inherit;
