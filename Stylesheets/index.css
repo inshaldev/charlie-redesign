@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@300;500;700&display=swap');
 *,
 *::after,
 *::before {
@@ -58,6 +58,12 @@ a {
   height: 65vw;
   object-fit: cover;
 }
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .name {
   font-size: 3.25rem;
 }
@@ -68,4 +74,30 @@ a {
 }
 .contact-btn {
   margin-top: 3rem;
+}
+@media only screen and (min-width: 1080px) {
+  .home-container {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    min-height: 100vh;
+  }
+  .info {
+    border-left: 5px solid black;
+    align-items: flex-start;
+    padding: 3rem 3rem;
+    width: 40vw;
+  }
+  .name {
+    font-size: 4rem;
+  }
+  .description {
+    text-align: left;
+  }
+  .contact-btn {
+    border-radius: 0;
+  }
+  .display-pic {
+    width: 50vh;
+    height: 50vh;
+  }
 }
