@@ -48,7 +48,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  font-size: 4rem;
+  font-size: 3rem;
   list-style-type: none;
   width: 100%;
 }
@@ -72,7 +72,22 @@
   align-items: center;
   padding: 0.5rem 1rem;
 }
+.navbar-section-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
 @media only screen and (max-width: 991px) {
+  .navbar-link-active {
+    background-color: #e5e5e5;
+    color: #121212;
+  }
+  .navbar-link-active .navbar-list-item:hover {
+    background-color: #a5a5a5;
+  }
   @keyframes navbarOpens {
     0% {
       left: 100%;
@@ -131,5 +146,8 @@
     font-size: 20px;
     font-weight: 500;
     padding: 2vh 2rem;
+  }
+  .navbar-section-icons {
+    display: none;
   }
 }

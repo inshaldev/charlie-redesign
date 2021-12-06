@@ -87,6 +87,9 @@ a {
 .contact-btn {
   margin-top: 3rem;
 }
+.icons {
+  display: none;
+}
 @media only screen and (min-width: 600px) {
   .home-container {
     flex-direction: row-reverse;
@@ -114,6 +117,21 @@ a {
     width: 40vh;
     height: 40vh;
     box-shadow: 5px 5px 15px #5f5f5f;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 3rem;
+  }
+  .icons a {
+    padding: 0 1rem;
+  }
+  .icons a:hover {
+    background-color: #dfdfdf;
   }
 }
 @media only screen and (min-width: 992px) {
