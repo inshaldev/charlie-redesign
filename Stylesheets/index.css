@@ -11,7 +11,9 @@
   --dark: #121212;
   --gray: #212121;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* GLOBAL STYLES */
 body {
   color: var(--dark);
@@ -22,7 +24,7 @@ p {
   font-family: 'Open Sans';
   font-weight: 300;
 }
-button {
+.btn {
   font-family: 'Open Sans';
   font-weight: 300;
   border: 0;
@@ -32,6 +34,16 @@ button {
   font-size: 24px;
   padding: 10px;
   width: 70%;
+  text-align: center;
+  transition: 0.3s all ease;
+}
+.btn:hover {
+  transform: translateY(-8px);
+  background-color: #212121;
+  cursor: pointer;
+}
+.btn:active {
+  transform: translateY(0) scale(0.9);
 }
 a {
   color: inherit;
@@ -75,7 +87,7 @@ a {
 .contact-btn {
   margin-top: 3rem;
 }
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 600px) {
   .home-container {
     flex-direction: row-reverse;
     justify-content: space-evenly;
@@ -84,11 +96,13 @@ a {
   .info {
     border-left: 5px solid black;
     align-items: flex-start;
-    padding: 3rem 3rem;
-    width: 40vw;
+    padding: 3rem 0 0 3rem;
+    width: 50vw;
   }
   .name {
     font-size: 4rem;
+    line-height: 64px;
+    margin-bottom: 1rem;
   }
   .description {
     text-align: left;
@@ -97,7 +111,19 @@ a {
     border-radius: 0;
   }
   .display-pic {
+    width: 40vh;
+    height: 40vh;
+    box-shadow: 5px 5px 15px #5f5f5f;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .info {
+    padding: 3rem 3rem;
+    width: 40vw;
+  }
+  .display-pic {
     width: 50vh;
     height: 50vh;
+    box-shadow: 5px 5px 15px #5f5f5f;
   }
 }

@@ -41,19 +41,19 @@
   border: 1px solid #e5e5e5;
   width: 100%;
 }
-@media only screen and (max-width: 1079px) {
+@media only screen and (max-width: 991px) {
   .gallery-img5,
   .gallery-img6,
   .gallery-img7 {
     display: none;
   }
 }
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 992px) {
   .gallery-container {
     justify-content: center;
   }
   .gallery-heading {
-    margin-bottom: 1.5rem;
+    margin-top: auto;
   }
   .view-btn {
     margin-top: 1rem;
