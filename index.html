@@ -107,12 +107,13 @@
       </section>
       <section class="section" id="contact">
         <h1 class="contact-heading">Contact</h1>
-        <form class="contact-form">
+        <form class="contact-form" data-netlify="true">
           <label class="contact-label">Name</label>
           <input
             class="contact-input"
             type="text"
             placeholder="John Cena"
+            name="name"
             required
           />
           <label class="contact-label">Email</label>
@@ -120,6 +121,7 @@
             class="contact-input"
             type="email"
             placeholder="johncena@email.com"
+            name="email"
             required
           />
           <label class="contact-label">Message</label>
@@ -127,6 +129,7 @@
             class="contact-textarea"
             type="text"
             placeholder="Hello, I wanted to discuss about ..."
+            name="message"
             required
           ></textarea>
           <button class="contact-submit-btn">Send Message</button>
